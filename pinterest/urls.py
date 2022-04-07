@@ -1,6 +1,9 @@
 from django.urls import path
-from . import views
+from pinterest.views import *
 
 urlpatterns = [
-    path('', views.index)
+    path('', index),
+
+    # \path('pin/<int:id>/', get_pin_by_id, name="pin_id")
+
 ]

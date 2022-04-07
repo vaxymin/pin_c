@@ -27,6 +27,9 @@
 
     <div id="wrapper">
             <div id="columns">
+                {% if pins_on_board %}
+                    {% include 'pins.html' %}
+                {% endif %}
                 <div class="pin"> <img src="{% static 'img/img_1.jpg'%}" alt=""/> <p>Autor</p> </div>
                 <div class="pin"> <img src="{% static 'img/img_2.jpg'%}" alt=""/> <p>Autor</p> </div>
                 <div class="pin"> <img src="{% static 'img/img_3.jpg'%}" alt=""/> <p>Autor</p> </div>
@@ -43,6 +46,6 @@
                 <div class="pin"> <img src="{% static 'img/img_4.jpg'%}" alt=""/> <p>Autor</p> </div>
                 <div class="pin"> <img src="{% static 'img/img_5.jpg'%}" alt=""/> <p>Autor</p> </div>
             </div>
-        </div>
+    </div>
 </body>
 </html>
